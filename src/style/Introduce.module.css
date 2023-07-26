@@ -1,0 +1,21 @@
+.aaa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bbb {
+    width: 600px;
+}
+
+.ccc {
+    word-break: keep-all;
+    font-size: 36px;
+
+}
+
+.ddd {
+    word-break: keep-all;
+    font-size: 21px;
+}
