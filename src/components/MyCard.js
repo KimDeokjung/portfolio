@@ -18,37 +18,42 @@ function MyCard() {
                 <img className={classes.bbb} src={profile_image} />
 
                 <div className={classes.ccc}>
-                    <div>
-                        <img src={profile_icon}/>
-                        <span>김덕중</span>
+                    <div className={classes.ggg}>
+                        <div>
+                            <img className={classes.fff} src={profile_icon}/>
+                            <span>김덕중</span>
+                        </div>
+                        <div>
+                            <img className={classes.fff} src={birth_icon}/>
+                            <span>1997.11.03</span>
+                        </div>
+                        <div>
+                            <img className={classes.fff} src={pin_icon}/>
+                            <span>대구광역시 북구</span>
+                        </div>
+                        <div>
+                            <img className={classes.fff} src={phone_icon}/>
+                            <span>010-5272-1733</span>
+                        </div>
+                        <div>
+                            <img className={classes.fff} src={mail_icon}/>
+                            <span>ejrwnd1103@naver.com</span>
+                        </div>
+                        <div>
+                            <img className={classes.fff} src={school_icon}/>
+                            <span>영남대학교 컴퓨터공학과</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src={birth_icon}/>
-                        <span>1997.11.03</span>
-                    </div>
-                    <div>
-                        <img src={pin_icon}/>
-                        <span>대구광역시 북구</span>
-                    </div>
-                    <div>
-                        <img src={phone_icon}/>
-                        <span>010-5272-1733</span>
-                    </div>
-                    <div>
-                        <img src={mail_icon}/>
-                        <span>ejrwnd1103@naver.com</span>
-                    </div>
-                    <div>
-                        <img src={school_icon}/>
-                        <span>영남대학교 컴퓨터공학과</span>
-                    </div>
-                    <div>
-                        <img src={github_icon}/>
-                        <span>바로가기</span>
-                    </div>
-                    <div>
-                        <img src={blog_icon}/>
-                        <span>바로가기</span>
+
+                    <div className={classes.hhh}>
+                        <div>
+                            <img className={classes.fff} src={github_icon}/>
+                            <span>바로가기</span>
+                        </div>
+                        <div>
+                            <img className={classes.fff} src={blog_icon}/>
+                            <span>바로가기</span>
+                        </div>
                     </div>
                 </div>
             </div>

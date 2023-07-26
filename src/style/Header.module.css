@@ -15,6 +15,15 @@
     align-items: center;
     height: 4.5rem;
     padding: 0 12vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    color: white;
+    background: teal;
+    display: flex;
 }
 
 .bbb > span {

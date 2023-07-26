@@ -20,10 +20,10 @@
 }
 
 .aaa > div {
-    margin: 0 22vw;
+    margin: 0 22%;
 }
 
 .bbb{
-    border: 2px dashed #989797;
-    margin: 0 10vw;
+    border: 1.6px dashed #989797;
+    margin: 100px 10%;
 }

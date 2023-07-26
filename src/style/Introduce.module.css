@@ -7,12 +7,14 @@
 
 .bbb {
     width: 600px;
+    margin-bottom: 100px;
+    margin-top: 160px;
 }
 
 .ccc {
     word-break: keep-all;
     font-size: 36px;
-
+    margin-bottom: 40px;
 }
 
 .ddd {

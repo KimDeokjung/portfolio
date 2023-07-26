@@ -1,14 +1,3 @@
-.aaa {
-    background-color: #fff;
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 20px 3vw;
-}
-
 .bbb {
     border-radius: 50px;
     height: 360px;
@@ -16,42 +5,99 @@
     margin-right: 5vw;
 }
 
-.ccc {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.eee {
+    font-size: 33px;
+    font-weight: 900;
+    margin-bottom: 18px;
 }
 
-.ccc > div {
-    display: flex;
-    align-items: center;
-}
-
-.ccc > div:not(:last-of-type) {
-    margin-bottom: 16px;
-}
-
-.ccc > div:nth-child(6) {
-    margin-bottom: 50px;
-}
-
-.ccc > div > img {
+.fff {
     width: 20px;
     height: 20px;
     margin-right: 6px;
 }
 
-.ccc > div > span {
-    font-size: 18px;
+@media (min-width: 1100px) {
+    .aaa {
+        background-color: #fff;
+        box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px 3vw;
+    }
+
+    .ccc {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ggg > div, .hhh > div {
+        display: flex;
+        align-items: center;
+    }
+
+    .ggg > div:not(:last-of-type), .hhh > div:not(:last-of-type) {
+        margin-bottom: 16px;
+    }
+
+    .ccc > * {
+        font-size: 18px;
+    }
+
+    .ddd {
+        width: 100%;
+        display: flex;
+    }
+
+    .ggg {
+        margin-bottom: 50px;
+    }
 }
 
-.ddd {
-    width: 100%;
-    display: flex;
-}
+@media (max-width: 1100px) {
+    .aaa {
+        background-color: #fff;
+        box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px 1vw;
+        min-width: 400px;
+    }
 
-.eee {
-    font-size: 33px;
-    font-weight: 900;
-    margin-bottom: 18px;
+    .bbb {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .ccc {
+        display: flex;
+    }
+
+    .ggg > div, .hhh > div {
+        display: flex;
+        align-items: center;
+    }
+
+    .ggg > div:not(:last-of-type), .hhh > div:not(:last-of-type) {
+        margin-bottom: 12px;
+    }
+
+
+    .ggg {
+        margin-right: 80px;
+    }
+
+    .ddd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

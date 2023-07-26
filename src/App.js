@@ -3,6 +3,7 @@ import classes from "./style/App.module.css";
 import Header from "./components/Header";
 import Introduce from "./components/Introduce";
 import MyCard from "./components/MyCard";
+import Skill from "./components/skill/Main"
 
 function App() {
     return (
@@ -13,6 +14,11 @@ function App() {
                 <MyCard/>
 
                 <hr className={classes.bbb}/>
+
+                <Skill />
+
+                <hr className={classes.bbb}/>
+
             </div>
         </div>
     );
