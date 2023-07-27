@@ -19,35 +19,90 @@ function Main() {
             img: DeliveryTogether,
             name: "Delivery Together",
             period: "2021.03 ~ 2021.11",
-            tech: "Spring Boot, React, Firebase"
+            tech: "Spring Boot, React, Firebase",
+            member: "",
+            works: [
+                {
+                    id: 1,
+                    content: "로그인"
+                },
+                {
+                    id: 2,
+                    content: "aaa"
+                }
+            ]
         },
         {
             id: 101,
             img: Ims,
             name: "IMS",
             period: "2022.01 ~ 2022.03",
-            tech: "Express Js, HTML, MongoDB"
+            tech: "Express Js, HTML, MongoDB",
+            member: "",
+            works: [
+                {
+                    id: 1,
+                    content: "aaa"
+                },
+                {
+                    id: 2,
+                    content: "aaa"
+                }
+            ]
         },
         {
             id: 102,
             img: Playground,
             name: "Playground",
             period: "2022.03 ~ 2022.06",
-            tech: "Express Js, Typescript, MongoDB"
+            tech: "Express Js, Typescript, MongoDB",
+            member: "",
+            works: [
+                {
+                    id: 1,
+                    content: "aaa"
+                },
+                {
+                    id: 2,
+                    content: "aaa"
+                }
+            ]
         },
         {
             id: 103,
             img: Deats,
             name: "Deats",
             period: "2023.03 ~ 2023.07",
-            tech: "NestJS, React, MySQL"
+            tech: "NestJS, React, MySQL",
+            member: "",
+            works: [
+                {
+                    id: 1,
+                    content: "aaa"
+                },
+                {
+                    id: 2,
+                    content: "aaa"
+                }
+            ]
         },
         {
             id: 104,
             img: Portfolio,
-            name: "Delivery Together",
+            name: "Portfolio",
             period: "2023.07",
-            tech: "React"
+            tech: "React",
+            member: "",
+            works: [
+                {
+                    id: 1,
+                    content: "aaa"
+                },
+                {
+                    id: 2,
+                    content: "aaa"
+                }
+            ]
         }
     ]
 
@@ -85,6 +140,8 @@ function Main() {
                                 name={project.name}
                                 period={project.period}
                                 tech={project.tech}
+                                member={project.member}
+                                works={project.works}
                             /> </SwiperSlide>)} </div>
             </Swiper>
         </div>

@@ -1,4 +1,5 @@
 import classes from "../../style/project/ProjectCard.module.css";
+import {SwiperSlide} from "swiper/react";
 
 function ProjectCard(props) {
     const openModal = () => {
@@ -21,6 +22,17 @@ function ProjectCard(props) {
                         <div className={classes.fff}>
                             <span>#Tech :</span>
                             <span>{props.tech}</span>
+                        </div>
+                        <div className={classes.fff}>
+                            <span>#Members :</span>
+                            <span>{props.tech}</span>
+                        </div>
+                        <div className={classes.ggg}>
+                            <span>#My Work :</span>
+                            <span>
+                                {props.works.map(work =>
+                                    <div className={classes.hhh} key={work.id}>▶ {work.content}</div>)}
+                            </span>
                         </div>
                     </div>
                 </div>
