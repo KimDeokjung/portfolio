@@ -14,6 +14,8 @@ function Header() {
                 <span>|</span>
                 <span>Projects</span>
                 <span>|</span>
+                <span>Career</span>
+                <span>|</span>
                 <span>Contact</span>
             </div>
         </div>

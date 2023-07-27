@@ -1,18 +1,11 @@
 .aaa {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bbb {
     font-size: 33px;
     font-weight: 900;
     margin-bottom: 32px;
-}
-
-.ccc {
-}
-
-.swiper{
-    --swiper-theme-color: #f60000;
 }

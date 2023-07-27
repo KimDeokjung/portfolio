@@ -24,6 +24,7 @@
     color: white;
     background: teal;
     display: flex;
+    z-index: 20;
 }
 
 .bbb > span {
@@ -35,6 +36,11 @@
 .ccc > span:nth-child(2n) {
     margin: 0 13px;
     font-size: 12px;
+    cursor: default;
+}
+
+.ccc > span:nth-child(2n - 1) {
+    cursor: pointer;
 }
 
 .ccc > span {
