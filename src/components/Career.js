@@ -43,52 +43,63 @@ function Career() {
                         <ul>
                             <li>Python Tesseract OCR 을 이용하여 7-segment 숫자 추출 알고리즘 개발</li>
                             <li>ESP32 CAM 카메라와 Arduino 연결</li>
-                            <li>이미지 전송 기능 개발</li>
+                            <li>S3 Bucket을 이용한 이미지 전송 기능 개발</li>
                             <li>Linux Makefile 등 개발환경 세팅</li>
                             <li>Flask 환경의 실시간 Arduino 모니터링 사이트 제작</li>
-                            <li></li>
-                            <li></li>
                         </ul>
                     </div>
 
                     <div className={classes.hhh}>
-                        <div>▎ 경북여성정책개발원 통계사이트 관리</div>
-                        <div>2021.11 ~ 2021.12</div>
+                        <div>▎ PayPal 결제 서비스 개발</div>
+                        <div>2022.01 ~ 2022.04</div>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>PayPal store 계정 등록</li>
+                            <li>서비스 신청 페이지 개발</li>
+                            <li>서비스 환불 페이지 개발</li>
+                            <li>서비스 변경 페이지 개발</li>
+                            <li>Instant Payment Notification 서비스 연결</li>
+                            <li>기존 NicePay 결제 서비스와의 공동 모듈 리팩토링</li>
+                            <li>Sandbox 환경 세팅</li>
+                            <li>데이터베이스 설계</li>
                         </ul>
                     </div>
 
                     <div className={classes.hhh}>
-                        <div>▎ 경북여성정책개발원 통계사이트 관리</div>
-                        <div>2021.11 ~ 2021.12</div>
+                        <div>▎ 자사 제품 "Clovine" Application 개발/출시</div>
+                        <div>2022.04 ~ 2022.08</div>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Application 자료조사 및 Demo제작</li>
+                            <li>루팅 감지 및 백그라운드 보호 등 보안 적용</li>
+                            <li>로그인 페이지 개발</li>
+                            <li>Google 소셜 로그인 개발</li>
+                            <li>Apple 소셜 로그인 개발</li>
+                            <li>결제 신청 페이지 개발</li>
+                            <li>결제 환불 페이지 개발</li>
+                            <li>PlayStore/AppStore 결제 기능 개발</li>
+                            <li>PlayStore 결제 In-App Purchase 기능 연결</li>
+                            <li>AppStore 결제 Webhook 서비스 연결</li>
+                            <li>PlayStore/AppStore 정식 출시</li>
+                            <li>Application 심사 대응</li>
+                            <li>푸시알림 기능 개발</li>
+                            <li>Application 파일 업로드 개발</li>
+                            <li>개발자 인수인계 및 온보딩 문서 작성</li>
                         </ul>
                     </div>
 
                     <div className={classes.hhh}>
-                        <div>▎ 경북여성정책개발원 통계사이트 관리</div>
-                        <div>2021.11 ~ 2021.12</div>
+                        <div>▎ 로그인 보안 강화</div>
+                        <div>2022.08 ~ 2022.09</div>
                         <ul>
+                            <li>로그인 토큰 암호화 알고리즘 개발</li>
+                            <li>토큰 유효성 검사 알고리즘 개발</li>
+                            <li>중복되는 middleware 삭제 및 토큰 검사 알고리즘 개선</li>
                             <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Google Tag Manager 서비스 연결</li>
                         </ul>
                     </div>
 
                     <div className={classes.hhh}>
-                        <div>▎ 경북여성정책개발원 통계사이트 관리</div>
+                        <div>▎ CSAP 심사 진행</div>
                         <div>2021.11 ~ 2021.12</div>
                         <ul>
                             <li></li>
