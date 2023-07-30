@@ -8,15 +8,7 @@ function Header() {
             </div>
 
             <div className={classes.ccc}>
-                <span className={classes.ddd}>About</span>
-                <span>|</span>
-                <span>Skill</span>
-                <span>|</span>
-                <span>Projects</span>
-                <span>|</span>
-                <span>Career</span>
-                <span>|</span>
-                <span>Contact</span>
+
             </div>
         </div>
     );

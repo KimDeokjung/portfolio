@@ -1,15 +1,13 @@
 import classes from "../../style/project/ProjectCard.module.css";
-import {SwiperSlide} from "swiper/react";
 
 function ProjectCard(props) {
-    const openModal = () => {
-        alert("???")
-    }
-
     return (
-            <div className={classes.aaa} onClick={openModal.bind(this)}>
+        <div>
+            <div className={classes.aaa} onClick={props.modalHandler.bind(this, 1)}>
 
-                <img className={classes.bbb} src={props.img}/>
+                <div className={classes.qqq}>
+                    <img className={props.name === "IMS" ? classes.zzz : classes.bbb} src={props.img}/>
+                </div>
                 <hr />
 
                 <div className={classes.ccc}>
@@ -33,10 +31,14 @@ function ProjectCard(props) {
                                 {props.works.map(work =>
                                     <div className={classes.hhh} key={work.id}>▶ {work.content}</div>)}
                             </span>
+                            <div className={classes.ppp}>
+                                <span>View More</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     );
 }
 

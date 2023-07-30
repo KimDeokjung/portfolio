@@ -1,0 +1,158 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal > section {
+    width: 56%;
+    height: 735px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    animation: modal-show 0.3s;
+    overflow: auto;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.modal.openModal {
+    display: flex;
+    align-items: center;
+    animation: modal-bg-show 0.3s;
+}
+@keyframes modal-show {
+    from {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes modal-bg-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #303030;
+}
+
+.deleteBtn {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.aaa {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.bbb {
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 32px;
+}
+
+.ccc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-break: keep-all;
+}
+
+.ddd {
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 32px;
+    border-left: black solid 1px;
+}
+
+.eee {
+    width: 400px;
+    height: 203px;
+
+}
+
+.fff {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-break: keep-all;
+}
+
+.ggg {
+    display: flex;
+    flex-direction: column;
+}
+
+.hhh {
+    display: flex;
+    width: 400px;
+}
+
+.iii {
+
+}
+
+.jjj {
+
+}
+
+.kkk {
+
+}
+
+.lll {
+
+}
+
+.nnn {
+
+}
+
+.mmm {
+
+}
+
+.ooo {
+
+}
+
+.ppp {
+
+}
+
+.qqq {
+
+}

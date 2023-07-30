@@ -29,8 +29,8 @@ function Career() {
                         <div>▎ 경북여성정책개발원 통계사이트 관리</div>
                         <div>2021.11 ~ 2021.12</div>
                         <ul>
-                            <li>Python을 이용하여 Excel 데이터를 HTML 파일로 변환하는 자동화 툴 제작</li>
-                            <li>Oracle을 활용한 조회수 기능 DB설계</li>
+                            <li>Python을 이용하여 Excel 파일을 HTML 파일로 변환하는 자동화 툴 제작</li>
+                            <li>조회수 기능 DB설계</li>
                             <li>당일 조회수와 누적 조회수를 보여주는 조회수 기능 개발</li>
                             <li>통계데이터 페이지 업데이트</li>
                             <li>Tomcat을 활용한 서버 업데이트</li>

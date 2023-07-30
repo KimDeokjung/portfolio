@@ -27,10 +27,9 @@ function Contact() {
             <div className={classes.bbb}>
                 <img className={classes.ccc} src={contact_icon} />
                 <span className={classes.ddd}>
-                    If you have questions or just<br/>
-                    want to get in touch, use the<br/>
-                    from below. I look forward to<br/>
-                    hearing from you!
+                    포트폴리오를 끝까지<br/>
+                    봐주셔서 감사합니다.<br/>
+                    질문이 있다면 편하게 연락주세요!
                 </span>
             </div>
             <div className={classes.eee}>

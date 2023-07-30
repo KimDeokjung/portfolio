@@ -1,3 +1,4 @@
+import {useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { EffectCoverflow, Navigation,Mousewheel} from "swiper/modules";
@@ -11,7 +12,10 @@ import Playground from "../../images/Playground.png"
 import Deats from "../../images/Deats.png"
 import Portfolio from "../../images/Portfolio.png"
 
+import DeliveryTogetherModal from "./projectModal/DeliveryTogetherModal";
+
 function Main() {
+    const [modalOpen, setModalOpen] = useState(0)
 
     const projects = [
         {
@@ -28,6 +32,10 @@ function Main() {
                 },
                 {
                     id: 2,
+                    content: "aaa"
+                },
+                {
+                    id: 3,
                     content: "aaa"
                 }
             ]
@@ -142,8 +150,11 @@ function Main() {
                                 tech={project.tech}
                                 member={project.member}
                                 works={project.works}
+                                modalHandler={setModalOpen}
                             /> </SwiperSlide>)} </div>
             </Swiper>
+
+            <DeliveryTogetherModal isOpen={true} modalHandler={setModalOpen}/>
         </div>
     );
 }

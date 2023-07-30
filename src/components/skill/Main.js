@@ -93,21 +93,16 @@ function Main() {
         },
         {
             id: 15,
-            name: "GCP",
-            level: 60
-        },
-        {
-            id: 16,
             name: "MySql",
             level: 60
         },
         {
-            id: 17,
+            id: 16,
             name: "MongoDB",
             level: 70
         },
         {
-            id: 18,
+            id: 17,
             name: "Firebase",
             level: 60
         },
@@ -115,30 +110,31 @@ function Main() {
 
     const etcContents = [
         {
-            id: 19,
+            id: 18,
             name: "Git",
             level: 80
         },
         {
-            id: 20,
+            id: 19,
             name: "AWS",
             level: 70
         },
         {
+            id: 20,
+            name: "Docker",
+            level: 50
+        },
+        {
             id: 21,
-            name: "Figma",
+            name: "GCP",
             level: 60
         },
         {
             id: 22,
-            name: "Zeplin",
-            level: 60
-        },
-        {
-            id: 23,
-            name: "Notion",
-            level: 50
-        },
+            name: "VMware",
+            level: 40
+        }
+
     ]
 
     const setSlide = (index) => {

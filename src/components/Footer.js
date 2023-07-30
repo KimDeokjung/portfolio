@@ -2,7 +2,7 @@ import classes from "../style/Footer.module.css";
 
 import github_footer_icon from "../images/github_footer_icon.png"
 import instar_white_icon from "../images/instar_white_icon.png"
-import blog_icon from "../images/blog_icon.png"
+import blog_icon from "../images/blog_icon_black.png"
 
 function Footer() {
     return (

@@ -58,7 +58,7 @@ const Dot = styled.div`
   width: 40px;
   height: 40px;
   box-sizing: border-box;
-  border: 8px solid #DBC4F0;
+  border: 5px solid #ffc988;
   border-radius: 35px;
   background: white;
   margin-left: -35px;
