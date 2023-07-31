@@ -66,14 +66,12 @@
 
     .nnn {
         font-size: 1rem;
+        cursor: pointer;
     }
 }
 
 @media (max-width: 1100px) {
     .aaa {
-        background-color: #fff;
-        box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
-        border-radius: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -97,7 +95,7 @@
     }
 
     .ggg > div:not(:last-of-type), .hhh > div:not(:last-of-type) {
-        margin-bottom: 12px;
+        margin-bottom: 36px;
     }
 
 
@@ -110,5 +108,16 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .mmm {
+        display: none;
+    }
+
+
+    .bbb {
+        width: 220px;
+        height: 300px;
+    }
+
 
 }

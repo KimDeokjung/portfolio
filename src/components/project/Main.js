@@ -13,102 +13,122 @@ import Deats from "../../images/Deats.png"
 import Portfolio from "../../images/Portfolio.png"
 
 import DeliveryTogetherModal from "./projectModal/DeliveryTogetherModal";
+import ImsModal from "./projectModal/ImsModal";
+import PlaygroundModal from "./projectModal/PlaygroundModal";
+import DeatsModal from "./projectModal/DeatsModal";
+import PortfolioModal from "./projectModal/PortfolioModal";
 
 function Main() {
     const [modalOpen, setModalOpen] = useState(0)
 
     const projects = [
         {
-            id: 100,
+            id: 1,
             img: DeliveryTogether,
             name: "Delivery Together",
             period: "2021.03 ~ 2021.11",
             tech: "Spring Boot, React, Firebase",
-            member: "",
+            member: "개발자 2명",
             works: [
                 {
                     id: 1,
-                    content: "로그인"
+                    content: "로그인 및 회원가입"
                 },
                 {
                     id: 2,
-                    content: "aaa"
+                    content: "로그인 인증 및 관리"
                 },
                 {
                     id: 3,
-                    content: "aaa"
+                    content: "실시간 채팅"
                 }
             ]
         },
         {
-            id: 101,
+            id: 2,
             img: Ims,
             name: "IMS",
             period: "2022.01 ~ 2022.03",
-            tech: "Express Js, HTML, MongoDB",
-            member: "",
+            tech: "ExpressJS, HTML, MongoDB",
+            member: "개발자 2명, 디자이너 2명",
             works: [
                 {
                     id: 1,
-                    content: "aaa"
+                    content: "프로젝트 페이지"
                 },
                 {
                     id: 2,
-                    content: "aaa"
+                    content: "프로젝트 뷰 페이지"
+                },
+                {
+                    id: 3,
+                    content: "리뷰 및 이슈 기능"
                 }
             ]
         },
         {
-            id: 102,
+            id: 3,
             img: Playground,
             name: "Playground",
             period: "2022.03 ~ 2022.06",
-            tech: "Express Js, Typescript, MongoDB",
-            member: "",
+            tech: "ExpressJs, TypeScript, MongoDB",
+            member: "개발자 2명",
             works: [
                 {
                     id: 1,
-                    content: "aaa"
+                    content: "유튜브 게임"
                 },
                 {
                     id: 2,
-                    content: "aaa"
+                    content: "하키 게임"
+                },
+                {
+                    id: 3,
+                    content: "서버 배포"
                 }
             ]
         },
         {
-            id: 103,
+            id: 4,
             img: Deats,
             name: "Deats",
-            period: "2023.03 ~ 2023.07",
+            period: "2023.03 ~ 진행 중",
             tech: "NestJS, React, MySQL",
-            member: "",
+            member: "개발자 3명, 디자이너 2명",
             works: [
                 {
                     id: 1,
-                    content: "aaa"
+                    content: "로그인 및 회원가입"
                 },
                 {
                     id: 2,
-                    content: "aaa"
+                    content: "커뮤니티 페이지 개발"
+                },
+                {
+                    id: 3,
+                    content: "서버 연결 및 배포"
                 }
             ]
         },
         {
-            id: 104,
+            id: 5,
             img: Portfolio,
             name: "Portfolio",
             period: "2023.07",
             tech: "React",
-            member: "",
+            member: "개발자 1명",
             works: [
                 {
                     id: 1,
-                    content: "aaa"
+                    content: "디자인"
                 },
                 {
                     id: 2,
-                    content: "aaa"
+                    content: "포트폴리오 페이지 개발"
+                },
+                {
+                    id: 3,
+                    content: "서버 배포"
                 }
             ]
         }
@@ -144,6 +164,7 @@ function Main() {
                         <SwiperSlide  key={project.id}>
                             <ProjectCard
                                 key={project.id}
+                                index={project.id}
                                 img={project.img}
                                 name={project.name}
                                 period={project.period}
@@ -154,7 +175,11 @@ function Main() {
                             /> </SwiperSlide>)} </div>
             </Swiper>
 
-            <DeliveryTogetherModal isOpen={true} modalHandler={setModalOpen}/>
+            <DeliveryTogetherModal isOpen={modalOpen === 1} modalHandler={setModalOpen}/>
+            <ImsModal isOpen={modalOpen === 2} modalHandler={setModalOpen}/>
+            <PlaygroundModal isOpen={modalOpen === 3} modalHandler={setModalOpen}/>
+            <DeatsModal isOpen={modalOpen === 4} modalHandler={setModalOpen}/>
+            <PortfolioModal isOpen={modalOpen === 5} modalHandler={setModalOpen}/>
         </div>
     );
 }

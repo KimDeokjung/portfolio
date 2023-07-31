@@ -8,9 +8,9 @@ function Footer() {
     return (
         <div className={classes.aaa}>
             <div className={classes.ccc}>
-                <img className={classes.bbb} src={github_footer_icon} />
-                <img src={instar_white_icon} />
-                <img className={classes.ddd} src={blog_icon} />
+                <img className={classes.bbb} src={github_footer_icon} onClick={() => window.open('https://github.com/KimDeokjung', '_blank')} />
+                <img src={instar_white_icon} onClick={() => window.open('https://www.instagram.com/duck_1733/', '_blank')} />
+                <img className={classes.ddd} src={blog_icon} onClick={() => window.open('https://velog.io/@kimdeokjoong', '_blank')} />
             </div>
 
             <span className={classes.eee}>Made by DeokJung Kim (2023)</span>

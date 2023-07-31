@@ -73,7 +73,7 @@ function MyCard() {
                             <img className={classes.fff} src={github_icon}/>
                             <div className={classes.lll}>
                                 <span className={classes.mmm}>GitHub</span>
-                                <span className={classes.nnn}>바로가기</span>
+                                <span className={classes.nnn} onClick={() => window.open('https://github.com/KimDeokjung', '_blank')}>바로가기</span>
                             </div>
                         </div>
 
@@ -81,7 +81,7 @@ function MyCard() {
                             <img className={classes.fff} src={blog_icon}/>
                             <div className={classes.lll}>
                                 <span className={classes.mmm}>Vlog</span>
-                                <span className={classes.nnn}>바로가기</span>
+                                <span className={classes.nnn} onClick={() => window.open('https://velog.io/@kimdeokjoong', '_blank')}>바로가기</span>
                             </div>
                         </div>
                     </div>

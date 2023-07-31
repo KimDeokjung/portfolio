@@ -21,9 +21,10 @@
 
 .aaa > div {
     margin: 0 22%;
+    min-width: 700px;
 }
 
 .bbb{
-    border: 1.6px dashed #989797;
+    border: 0.1px solid #b9b9b9;
     margin: 100px 10%;
 }

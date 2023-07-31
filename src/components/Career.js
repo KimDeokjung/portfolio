@@ -82,7 +82,7 @@ function Career() {
                             <li>Application 심사 대응</li>
                             <li>푸시알림 기능 개발</li>
                             <li>Application 파일 업로드 개발</li>
-                            <li>개발자 인수인계 및 온보딩 문서 작성</li>
+                            <li>개발자 인수인계 문서 작성</li>
                         </ul>
                     </div>
 
@@ -93,8 +93,10 @@ function Career() {
                             <li>로그인 토큰 암호화 알고리즘 개발</li>
                             <li>토큰 유효성 검사 알고리즘 개발</li>
                             <li>중복되는 middleware 삭제 및 토큰 검사 알고리즘 개선</li>
-                            <li></li>
+                            <li>가이드 문서 작성</li>
+                            <li>공동 인증 모듈 개발</li>
                             <li>Google Tag Manager 서비스 연결</li>
+                            <li>NodeJS 버전 업그레이드</li>
                         </ul>
                     </div>
 
@@ -102,11 +104,16 @@ function Career() {
                         <div>▎ CSAP 심사 진행</div>
                         <div>2021.11 ~ 2021.12</div>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>POC를 통한 Application 보안 적용 테스트</li>
+                            <li>Application 위변조 감지 적용</li>
+                            <li>전반적인 서비스 모의해킹 진행</li>
+                            <li>웹 취약점 확인 및 보수</li>
+                            <li>전반적인 API Method 변경</li>
+                            <li>휴대폰 인증 기능 연결</li>
+                            <li>휴대폰 인증 페이지 제작</li>
+                            <li>개인정보 변경 시 2차인증 기능 추가 적용</li>
+                            <li>CSAP 심사 실시간 대응</li>
+                            <li>PlayStore/AppStore 심사 준비</li>
                         </ul>
                     </div>
                 </div>

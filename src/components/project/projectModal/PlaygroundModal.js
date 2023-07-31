@@ -10,16 +10,16 @@ import 'swiper/css/scrollbar';
 import classes from "../../../style/project/ProjectModal.module.css";
 
 import deleteBtn from "../../../images/deleteBtn_icon.png"
-import one from "../../../images/modal/deliveryTogether/1.png"
-import two from "../../../images/modal/deliveryTogether/2.png"
-import three from "../../../images/modal/deliveryTogether/3.png"
-import four from "../../../images/modal/deliveryTogether/4.png"
-import five from "../../../images/modal/deliveryTogether/5.png"
-import six from "../../../images/modal/deliveryTogether/6.png"
-import seven from "../../../images/modal/deliveryTogether/7.png"
-import eight from "../../../images/modal/deliveryTogether/8.png"
+import one from "../../../images/modal/playground/1.png"
+import two from "../../../images/modal/playground/2.png"
+import three from "../../../images/modal/playground/3.png"
+import four from "../../../images/modal/playground/4.png"
+import five from "../../../images/modal/playground/5.png"
+import six from "../../../images/modal/playground/6.png"
+import seven from "../../../images/modal/playground/7.png"
+import eight from "../../../images/modal/playground/8.png"
 
-function DeliveryTogetherModal(props) {
+function PlaygroundModal(props) {
     const [mainPageIndex, setMainPageIndex] = useState(0);
     const [swiper, setSwiper] = useState(null);
 
@@ -78,7 +78,7 @@ function DeliveryTogetherModal(props) {
 
                             </div>
                             <div className={classes.title}>
-                                Delivery Together
+                                Playground
                             </div>
 
                             <img className={classes.deleteBtn} src={deleteBtn} onClick={props.modalHandler.bind(this, 0)} />
@@ -116,7 +116,7 @@ function DeliveryTogetherModal(props) {
                                             프로젝트 목적
                                         </span>
                                         <span>
-                                            대학교 4학년 때 졸업과제로 수행한 프로젝트입니다. 이 프로젝트는 대학생들이 흔히 마주치는 문제 중 하나인 배달비를 절약할 수 있는 방법을 고민하여 시작되었습니다. 주변에 같이 자취를하고 있는 동기들과 더 가까워지며 돈이 부족한 학우들이 식사 배달비를 아끼는 서비스를 개발하는 것이 저희의 목표였습니다.
+                                            고등학생 시절부터 친구였던 친구와 함께 수행한 프로젝트입니다. 이 프로젝트는 저와 친구가 평소 내기를 즐겼는데, 내기 방식을 고민하다 직접 게임을 만들어보면 재밌을 것 같다는 아이디어에서 출발하였습니다. 여러 가지 다양한 게임을 한 사이트에 게임방 형태로 만드는 것이 주요 목표였습니다.
                                         </span>
                                     </div>
 
@@ -126,89 +126,87 @@ function DeliveryTogetherModal(props) {
                                         </span>
                                         <div className={classes.fun_list_area}>
                                             <span className={ mainPageIndex === 0 ? classes.active_fun : classes.default_fun} onClick={setSlide.bind(this, 0)}>
-                                                { mainPageIndex === 0 ? "▼" : "▶"} 지도
+                                                { mainPageIndex === 0 ? "▼" : "▶"} 게임선택
                                             </span>
                                             <span className={mainPageIndex === 0 ? classes.active_fun_list : classes.hide_area}>
-                                                현재 위치를 기반으로 주변에 작성된 게시물들을 등록 메뉴에 대응되는 음식 아이콘으로 표시해줍니다.
+                                                사용자가 게임을 선택 할 수 있습니다. 원하는 게임을 클릭 시 해당 페이지로 이동합니다.
                                                 <br/><br/>
-                                                사용자 위치정보를 기반으로 받아온 정보를 Google MapView를 통해 화면에 표시합니다.
+                                                디자인에 최대한 시간을 아끼기 위해 대부분의 CSS를 Bootstrap을 이용하여 진행했습니다.
                                             </span>
                                         </div>
 
                                         <div className={classes.fun_list_area}>
                                             <span className={ mainPageIndex === 1 ? classes.active_fun : classes.default_fun} onClick={setSlide.bind(this, 1)}>
-                                                { mainPageIndex === 1 ? "▼" : "▶"} 회원가입 ✔
+                                                { mainPageIndex === 1 ? "▼" : "▶"} 랜덤
                                             </span>
                                             <span className={mainPageIndex === 1 ? classes.active_fun_list : classes.hide_area}>
-                                                사용자의 이메일, 생년월일, 국적, 성별, 비밀번호를 받아 새로운 회원을 등록합니다.
-                                                <br/><br/>
-                                                등록된 사용자는 Firebase에 정보를 추가하여 회원을 등록합니다.
+                                                최대 숫자를 입력하고 시작을 누르게되면 화면에 0~입력한숫자 까지 중 랜덤으로 숫자 하나가 표시됩니다.
                                             </span>
                                         </div>
 
                                         <div className={classes.fun_list_area}>
                                             <span className={ mainPageIndex === 2 ? classes.active_fun : classes.default_fun} onClick={setSlide.bind(this, 2)}>
-                                                { mainPageIndex === 2 ? "▼" : "▶"} 로그인 ✔
+                                                { mainPageIndex === 2 ? "▼" : "▶"} 유튜브 ✔
                                             </span>
                                             <span className={mainPageIndex === 2 ? classes.active_fun_list : classes.hide_area}>
-                                                사용자가 이메일, 비밀번호를 입력하여 로그인을 시도합니다. 로그인이 된다면 지도 페이지로 이동됩니다.
+                                                각각의 검색어를 입력 하고 시작하면 유튜브에서 그 검색어를 입력했을 때 가장 상단에 노출되는 영상을 표시합니다.
                                                 <br/><br/>
-                                                비밀번호를 해싱키 암호화를 통해 암호화한 뒤 Firebase에 저장된 이메일 정보와 일치하는지 확인한 뒤 권한을 부여합니다.
+                                                Youtube APi를 통해 입력받은 검색어에 매칭되는 영상의 정보를 받아옵니다. Youtube Api같은 경우 무료로 사용할 경우 일일 최대 제한이 있기 때문에 예외처리를 따로 하였습니다.
                                             </span>
                                         </div>
 
                                         <div className={classes.fun_list_area}>
                                             <span className={ mainPageIndex === 3 ? classes.active_fun : classes.default_fun} onClick={setSlide.bind(this, 3)}>
-                                                { mainPageIndex === 3 ? "▼" : "▶"} 사용자 프로필
+                                                { mainPageIndex === 3 ? "▼" : "▶"} 제비뽑기
                                             </span>
                                             <span className={mainPageIndex === 3 ? classes.active_fun_list : classes.hide_area}>
-                                                회원가입 할 때 사용한 회원정보를 표시해줍니다.
+                                                당첨과 꽝의 갯수를 설정한 뒤, 번갈아 가며 한개씩 제비를 확인합니다. 초기화를 누를 경우 꽝 위치가 바뀌며, 꽝 확인을 누를 경우 꽝인 제비만 일시적으로 뒤집히며 위치를 확인시켜 줍니다.
                                                 <br/><br/>
-                                                현재 로그인 된 유저의 정보를 Database에 요청합니다.
+                                                단순히 제비뽑기를 하는게 아닌 랭킹 기능을 만들어 자신의 플레이 기록을 MongoDB에 저장해 해당 플레이의 랭킹을 보여줍니다.
                                             </span>
                                         </div>
 
                                         <div className={classes.fun_list_area}>
                                             <span className={ mainPageIndex === 4 ? classes.active_fun : classes.default_fun} onClick={setSlide.bind(this, 4)}>
-                                                { mainPageIndex === 4 ? "▼" : "▶"} 게시물 등록
+                                                { mainPageIndex === 4 ? "▼" : "▶"} 날씨
                                             </span>
                                             <span className={mainPageIndex === 4 ? classes.active_fun_list : classes.hide_area}>
-                                                제목, 카테고리, 가격, 내용을 입력하여 새로운 게시물을 등록합니다.
+                                                근 일주일간의 기온, 습도, 풍속 등의 날씨를 예측하여 맞추는 게임입니다. 각 날짜별로 예측한 데이터와의 차이가 적은 쪽이 승리합니다.
                                                 <br/><br/>
-                                                게시글을 등록한 시점의 위치와 함께 Database에 저장합니다. 해당 위치를 저장하는 이유는 추후 지도에 표시하기 위해서입니다.
+                                                기상청 Api를 통해 근 일주일간의 데이터를 받아와 비교합니다. 기상청 Api의 경우 일일 데이터 요청에 제한이 낮아서 못받아오는 경우의 예외처리를 따로 하였습니다.
                                             </span>
                                         </div>
 
                                         <div className={classes.fun_list_area}>
                                             <span className={ mainPageIndex === 5 ? classes.active_fun : classes.default_fun} onClick={setSlide.bind(this, 5)}>
-                                                { mainPageIndex === 5 ? "▼" : "▶"} 상대방 평가
+                                                { mainPageIndex === 5 ? "▼" : "▶"} 로비
                                             </span>
                                             <span className={mainPageIndex === 5 ? classes.active_fun_list : classes.hide_area}>
-                                                당근마켓의 당근온도를 모티브하여 만들었습니다. 함께 배달을 시켜먹은 상대방에게 매너점수를 부여할 수 있습니다.
+                                                모든 멀티게임에 공동적으로 들어가는 페이지 입니다. 새로운 게임을 만들 수도 있고, 기존에 만들어진 게임에 참여도 할 수 있습니다.
                                                 <br/><br/>
-                                                현재 평점을 받은 횟수와 새롭게 받은 평점까지 모두 연산하여 도출된 결과를 새롭게 Database에 업데이트 합니다.
+                                                자신이 접속하고 있는 게임이 아닌 다른 게임의 방이 보이면 안되기 때문에 Socket의 room 개념을 사용하였습니다. 같은 방에 들어와있는 인원이 2명이 되면 게임 플레이 화면으로 넘어갑니다.
                                             </span>
                                         </div>
 
                                         <div className={classes.fun_list_area}>
                                             <span className={ mainPageIndex === 6 ? classes.active_fun : classes.default_fun} onClick={setSlide.bind(this, 6)}>
-                                                { mainPageIndex === 6 ? "▼" : "▶"} 1:1 채팅 ✔
+                                                { mainPageIndex === 6 ? "▼" : "▶"} 하키 ✔
                                             </span>
                                             <span className={mainPageIndex === 6 ? classes.active_fun_list : classes.hide_area}>
-                                                함께 배달을 시켜먹기를 희망하는 상대방에게 메신저를 보낼 수 있습니다.
+                                                PC의 경우 "w"와 "s"키, 모바일의 경우 터치를 이용해 보드판을 위/아래로 움직이면서 고을 서로에게 튕겨 공격하는 게임입니다.
                                                 <br/><br/>
-                                                Firebase Realtime Database를 사용하였으며, 채팅의 특성에 맞게 실시간으로 컴포넌트를 업데이트 시켜줍니다.
+                                                Soket.io를 이용하여 만든 게임입니다. 양방향 통신을 통해 공의 구심점, 보드판의 위치, 속도 등을 받아오면 공과 Canvas를 이용해 화면에 표시하였습니다.
                                             </span>
                                         </div>
 
                                         <div className={classes.fun_list_area}>
                                             <span className={ mainPageIndex === 7 ? classes.active_fun : classes.default_fun} onClick={setSlide.bind(this, 7)}>
-                                                { mainPageIndex === 7 ? "▼" : "▶"} 채팅방 ✔
+                                                { mainPageIndex === 7 ? "▼" : "▶"} 숫자야구
                                             </span>
                                             <span className={mainPageIndex === 7 ? classes.active_fun_list : classes.hide_area}>
-                                                이때까지 주고받은 사용자와의 메신저를 리스트 형식으로 마지막 대화를 보여줍니다. 만일 다른페이지에 있어도 헤더에 메신저가 왔다는 알림표시를 보냅니다.
+                                                초반에 숫자의 자릿수와 제한시간을 설정하면 그 설정값에 맞춰 숫자야구를 진행하는 게임입니다.
                                                 <br/><br/>
-                                                Firebase Realtime Database를 사용하였으며, 현재까지 메신저를 주고받은 사용자들의 정보와, 마지막 메신저의 내용 그리고 시간을 저장해 표시합니다.
+                                                Soket.io를 이용하여 만든 게임입니다. 숫자 입력 이벤트를 송신하여 상대방의 Document를 업데이트 시켜줍니다.
                                             </span>
                                         </div>
                                     </div>
@@ -217,11 +215,12 @@ function DeliveryTogetherModal(props) {
                                         <span>
                                             사용 기술
                                         </span>
-                                        <span>⦁ React</span>
-                                        <span>⦁ Spring Boot</span>
-                                        <span>⦁ Firebase</span>
-                                        <span>⦁ Google Map</span>
-                                        <span>⦁ Redux</span>
+                                        <span>⦁ HTML5</span>
+                                        <span>⦁ NodeJS</span>
+                                        <span>⦁ TypeScript</span>
+                                        <span>⦁ Express</span>
+                                        <span>⦁ Socket</span>
+                                        <span>⦁ MongoDB</span>
                                     </div>
 
 
@@ -230,11 +229,11 @@ function DeliveryTogetherModal(props) {
                                             느낌점과 기술 선정 이유
                                         </span>
                                         <span>
-                                            이 프로젝트는 처음으로 협동 프로젝트 형태로 진행되었습니다. 기존에는 주로 개인적인 과제나 단순한 GUI 개발에 초점을 맞추었지만, 이번 기회를 통해 팀원들과 함께 아이디어를 공유하고 기획부터 개발까지 협력하여 프로젝트를 완성하였습니다. 이 경험은 저에게 매우 의미 있는 시간이었으며, 협업의 중요성과 팀원들과의 원활한 소통과 협력의 가치를 깨닫게 해주었습니다.
+                                            이 프로젝트는 무엇보다도 친구와 함께 즐기면서 만들었다는 점이 가장 큰 강점입니다. 평소에는 학습이나 업무 위주의 프로젝트들을 하곤 했는데, 이번 프로젝트는 순수한 즐거움과 창의성을 느낄 수 있는 소중한 경험이었습니다. 친구가 같은 분야를 배우고 있었기 때문에 함께 코딩하고 이야기하는 시간들이 특히 즐거웠습니다.
                                             <br/><br/>
-                                            프로젝트에서는 Spring Boot와 React가 가장 있기 있고, 학습에 의미가 있다고 판단하여 사용하였습니다. Spring을 쓰지 않고 Spring Boot를 선택한 이유는 React를 Front End 프레임으로 체택했기 때문에 Api 서버로서 더욱 어울리다고 판단한 것이었습니다. React를 활용하여 컴포넌트 기반의 웹 페이지를 개발하는 방법을 익히고, Spring Boot를 사용하여 MVC패턴의 개념을 깊이 있게 학습하고 활용하였습니다.
+                                            기술 스택으로는 가장 자신있다고 생각한 Express와 MongoDB를 선택하였습니다. 이번 기회에 프로젝트에 더해질 차별성을 위해 Typescript를 도입하고자 하였습니다. Typescript를 사용하면 코드 관리와 유지보수가 용이해질 뿐만 아니라, 좀 더 안정적이고 확장 가능한 프로젝트를 만들 수 있다고 생각했습니다.
                                             <br/><br/>
-                                            또한, Firebase 서버를 활용하여 로그인 기능과 Database를 효과적으로 처리하였습니다. 이 과정에서 처음으로 NoSQL을 접하게 되었고, 기존의 SQL과의 차이점과 장단점에 대해 배울 수 있는 기회가 되었습니다.
+                                            또한, 솔로플레이 위주의 게임보다 멀티플레이가 가능한 게임을 만들기 위해 Socket을 활용하였습니다. Firebase를 사용해본 경험이 있었지만, 이번에는 Socket을 통한 양방향 통신을 처음으로 적용해보았습니다. 실시간 동기화에 대한 이해와 사용에 많은 노력을 기울이며, 이를 통해 숙련도를 높일 수 있었습니다.
                                         </span>
                                     </div>
                                 </div>
@@ -242,21 +241,21 @@ function DeliveryTogetherModal(props) {
                                     <div className={classes.right_content}>
                                         <span>회고록</span>
 
-                                        <div className={ mainPageIndex === 1 || mainPageIndex === 2 ? classes.active_detail : classes.default_detail} onClick={setSlide.bind(this, 1)}>
-                                            <span>비밀번호 암호화</span>
+                                        <div className={ mainPageIndex === 2 ? classes.active_detail : classes.default_detail} onClick={setSlide.bind(this, 2)}>
+                                            <span>유튜브 데이터 호출</span>
                                             <span>
-                                                비밀번호를 Database에 어떤 식으로 저장해야 할지 고민했습니다. 수업 때 암호화 기법에 대해서는 많이 배웠지만 어떤 암호화를 사용해야 할지 바로 정하진 못했습니다.<br/><br/>
-                                                비밀번호 암호화에 쓰이는 "대칭 키", "비대칭 키", "해싱"에 대하여 각각의 장, 단점을 분석하였습니다. "대칭 키" 암호화 기법은 속도가 빠르지만 암/복호화에 동일한 키를 사용한다는 점에서 보안에 문제가 있을 것 같았습니다. 또한 "비대칭 키"는 보안성은 비교적 좋았지만 암/복호화에 시간을 많이 쓴다는 단점이 있었습니다.<br/><br/>
-                                                저는 앞서 말한 두 암호화의 장점을 가지고 있는 "해싱" 기법에서 SHA-256을 사용하여 비밀번호 암호화를 진행했습니다.
+                                                Youtube Api를 이용해서 데이터를 받아오는 거에 생각보다 시간이 오래 걸렸습니다. 처음에는 한 개의 영상 정보가 도착하면 다음 영상 정보를 호출하는 식으로 진행하였는데, 검색어가 5개만 넘어가도 페이지가 멈추는 착각이 들었습니다.<br/><br/>
+                                                해당 문제를 개선할 수 있는 부분은 총 2가지였습니다. 첫째로 동기 형식의 Api 요청을 Promise를 이용한 비동기 형식으로 변환하여 한 번에 여러 영상을 호출할 수 있게 되었습니다. 해당 방식으로 호출의 시간 복잡도를 O(N)에서 O(1)로 바뀌게 되었습니다.<br/><br/>
+                                                두 번째론 로딩 페이지를 만들었습니다. 실제 데이터를 받아오는데 걸리는 시간을 똑같지만 화면이 멈춘 게 아닌 데이터를 받아오고 있다는 정보를 사용자에게 제공하였습니다.
                                             </span>
                                         </div>
 
-                                        <div className={ mainPageIndex === 6 || mainPageIndex === 7 ? classes.active_detail : classes.default_detail} onClick={setSlide.bind(this, 6)}>
-                                            <span>실시간 통신</span>
+                                        <div className={ mainPageIndex === 6 ? classes.active_detail : classes.default_detail} onClick={setSlide.bind(this, 6)}>
+                                            <span>공 위치 계산</span>
                                             <span>
-                                                이 프로젝트를 하면서 가장 고민을 많이 했던 부분입니다. 실시간 통신 자체가 처음이라서 어떤 식으로 진행해야 할지 다양한 방식을 자료조사하고 개발을 진행했습니다.<br/><br/>
-                                                통상적으로 실시간 통신을 할 때는 Soket을 많이 쓰지만 저는 Firebase Realtime Database의 성질과 기능을 이용하여 Database의 Chat 부분이 업데이트되면 Spring Boot 쪽으로 신호를 줘서 React 컴포넌트를 업데이트하는 형태로 해결하였습니다.<br/><br/>
-                                                Firebase 공식 자료에서도 Realtime Database를 이용하여 채팅을 만드는 가이드가 있을 만큼 공식화된 기능이지만 Spring Boot를 거쳐서 처리하는 방식으로 개발하여 어려움이 많았습니다.
+                                                이 프로젝트를 하면서 가장 많은 신경을 썼던 부분입니다. 하키 게임은 임의로 프레임을 설정 해둔 뒤, 각 프레임마다 공의 위치와 보드의 위치를 Player1과 Player2에게 동시에 보내게 됩니다.<br/><br/>
+                                                공의 위치에 더해지는 변수는 벽과의 충돌, 보드와의 충돌, 가속으로 총 3가지입니다. 벽과의 충돌과 보드와의 충돌은 공의 x축 속도와 y 축 속도를 반전시켜주면 되지만 가속 같은 경우 한쪽으로만 가속을 주게 되면 위아래로만 빨리 가는 등 이상한 공의 궤적이 만들어지게 됩니다.<br/><br/>
+                                                그래서 저는 각도라는 속성을 추가하여 구심점을 중심으로 해당 각도의 위치로 일정한 크기의 가속을 더해주었습니다. 그 결과 공의 속도는 부드럽게 가속되는 궤적을 만들었으며 게임에 흥미를 한층 더했습니다.
                                             </span>
                                         </div>
                                     </div>
@@ -264,8 +263,8 @@ function DeliveryTogetherModal(props) {
                             </div>
 
                             <div className={classes.btn_area}>
-                                <div className={classes.link_btn} onClick={() => window.open('https://github.com/yu-capstone-design/delivery-together', '_blank')}>Source</div>
-                                <div className={classes.link_btn} onClick={() => window.open('https://www.youtube.com/watch?v=OAZtWIabdJw', '_blank')}>Demo</div>
+                                <div className={classes.link_btn} onClick={() => window.open('https://github.com/abcworld123/playground', '_blank')}>Source</div>
+                                <div className={classes.link_btn} onClick={() => window.open('https://game.abcworld123.com', '_blank')}>Link</div>
                             </div>
                         </div>
                     </div>
@@ -275,4 +274,4 @@ function DeliveryTogetherModal(props) {
     );
 }
 
-export default DeliveryTogetherModal;
+export default PlaygroundModal;
