@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -77,7 +77,7 @@ function Ims(props) {
                         <div className={classes.content}>
                             <div className={classes.top_content}>
                                 <div className={classes.left_content}>
-                                    <div className={classes.mobile_swiper_area}>
+                                    <div className={classes.swiper_area}>
                                         <Swiper
                                             effect={"fade"}
                                             autoplay={{
@@ -88,7 +88,9 @@ function Ims(props) {
                                                 clickable: true,
                                             }}
                                             onSlideChange={(e) => setMainPageIndex(e.activeIndex)}
-                                            modules={[Navigation, Autoplay, Pagination]}
+                                            modules={[Navigation, Autoplay, Pagination, EffectCoverflow]}
+                                            navigation={true}
+                                            mousewheel={true}
                                             className="mySwiper"
                                             loop={false}
                                             onSwiper={setSwiper}

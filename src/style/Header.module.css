@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Ramche';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Ramche.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.aaa {
+.content {
     font-family: 'Pretendard';
     font-weight: normal;
     font-style: normal;
@@ -15,38 +8,18 @@
     align-items: center;
     height: 4.5rem;
     padding: 0 12vw;
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
     color: #000;
     background: #fff;
     display: flex;
     z-index: 20;
 }
 
-.bbb > span {
+.logo > span {
     font-size: 26px;
     font-weight: 900;
     font-weight: bold;
-}
-
-.ccc > span:nth-child(2n) {
-    margin: 0 13px;
-    font-size: 12px;
-    cursor: default;
-}
-
-.ccc > span:nth-child(2n - 1) {
-    cursor: pointer;
-}
-
-.ccc > span {
-    font-size: 16px;
-}
-
-.ddd {
-    color: coral;
 }

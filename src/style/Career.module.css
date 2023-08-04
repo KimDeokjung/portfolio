@@ -1,61 +1,63 @@
-.aaa {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.bbb {
+.header {
     font-size: 42px;
     font-weight: 900;
     margin-bottom: 46px;
 }
 
-.ccc {
+.logo {
     width: 13vw;
     height: 13vw;
+    max-height: 500px;
+    max-width: 500px;
     border: 1px solid black;
-    border-radius: 200px;
+    border-radius: 600px;
 }
 
-.ddd {
+.detail {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
 }
 
-.eee {
+.logo_area {
     width: 40%;
     display: flex;
     justify-content: center;
 }
 
-.fff {
+.career_area {
     width: 60%;
     border-left: 1px solid #ccc;
     box-sizing: border-box;
     padding: 0 3vw;
 }
 
-.fff > div:nth-child(1) {
+.career_area > div:nth-child(1) {
     font-size: 24px;
     font-weight: bold;
     color: black;
     margin-bottom: 12px;
 }
 
-.fff > div:nth-child(2) {
+.career_area > div:nth-child(2) {
     font-size: 15px;
     color: #969696;
     margin-bottom: 16px;
 }
 
-.fff > div:nth-child(3) {
+.career_area > div:nth-child(3) {
     margin-bottom: 24px;
     font-size: 16px;
 }
 
-.fff > div:nth-child(4) {
+.career_area > div:nth-child(4) {
     font-size: 16px;
 }
 
@@ -69,16 +71,16 @@ ul > li {
     margin-bottom: 8px;
 }
 
-.ggg {
+.line {
     border: 1px solid #ccc;
     margin: 24px 0;
 }
 
-.hhh {
+.career_detail {
     margin-bottom: 32px;
 }
 
-.hhh > div:nth-child(1){
+.career_detail > div:nth-child(1){
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -86,7 +88,7 @@ ul > li {
     margin-bottom: 8px;
 }
 
-.hhh > div:nth-child(2){
+.career_detail > div:nth-child(2){
     font-size: 15px;
     color: #969696;
     margin-bottom: 16px;

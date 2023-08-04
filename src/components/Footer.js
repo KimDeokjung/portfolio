@@ -6,14 +6,14 @@ import blog_icon from "../images/blog_icon_black.png"
 
 function Footer() {
     return (
-        <div className={classes.aaa}>
-            <div className={classes.ccc}>
-                <img className={classes.bbb} src={github_footer_icon} onClick={() => window.open('https://github.com/KimDeokjung', '_blank')} />
+        <div className={classes.content}>
+            <div className={classes.logo_area}>
+                <img className={classes.github_logo} src={github_footer_icon} onClick={() => window.open('https://github.com/KimDeokjung', '_blank')} />
                 <img src={instar_white_icon} onClick={() => window.open('https://www.instagram.com/duck_1733/', '_blank')} />
-                <img className={classes.ddd} src={blog_icon} onClick={() => window.open('https://velog.io/@kimdeokjoong', '_blank')} />
+                <img className={classes.velog_logo} src={blog_icon} onClick={() => window.open('https://velog.io/@kimdeokjoong', '_blank')} />
             </div>
 
-            <span className={classes.eee}>Made by DeokJung Kim (2023)</span>
+            <span>Made by DeokJung Kim (2023)</span>
         </div>
     );
 }

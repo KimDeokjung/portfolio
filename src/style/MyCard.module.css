@@ -1,31 +1,31 @@
-.bbb {
+.profile_img {
     border-radius: 12px;
     height: 432px;
     width: 336px;
     margin-right: 5vw;
 }
 
-.eee {
+.header {
     font-size: 42px;
     font-weight: 900;
     margin-bottom: 46px;
 }
 
-.fff {
+.icon_img {
     width: 30px;
     height: 30px;
     margin-right: 16px;
 }
 
 @media (min-width: 1100px) {
-    .aaa {
+    .content {
         display: flex;
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
     }
 
-    .ccc {
+    .info_area {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -33,45 +33,44 @@
         align-items: center;
     }
 
-
-    .ggg > div:not(:last-of-type), .hhh > div:not(:last-of-type) {
+    .left_area > div:not(:last-of-type), .hhh > div:not(:last-of-type) {
         margin-bottom: 46px;
     }
 
-    .ccc > * {
+    .info_area > * {
         font-size: 18px;
     }
 
-    .ddd {
+    .down_area {
         width: 100%;
         display: flex;
     }
 
-    .kkk {
+    .detail_info_area {
         display: flex;
         align-items: flex-start;
     }
 
-    .lll {
+    .detail_info {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .mmm {
+    .info_header {
         font-size: 1.25rem;
         font-weight: bold;
         margin-bottom: 8px;
     }
 
-    .nnn {
+    .info_content {
         font-size: 1rem;
         cursor: pointer;
     }
 }
 
 @media (max-width: 1100px) {
-    .aaa {
+    .content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,44 +79,41 @@
         min-width: 400px;
     }
 
-    .bbb {
+    .profile_img {
         margin-right: 0;
         margin-bottom: 30px;
     }
 
-    .ccc {
+    .info_area {
         display: flex;
     }
 
-    .ggg > div, .hhh > div {
+    .left_area > div, .hhh > div {
         display: flex;
         align-items: center;
     }
 
-    .ggg > div:not(:last-of-type), .hhh > div:not(:last-of-type) {
+    .left_area > div:not(:last-of-type), .hhh > div:not(:last-of-type) {
         margin-bottom: 36px;
     }
 
-
-    .ggg {
+    .left_area {
         margin-right: 80px;
     }
 
-    .ddd {
+    .down_area {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .mmm {
+    .info_header {
         display: none;
     }
 
 
-    .bbb {
+    .profile_img {
         width: 220px;
         height: 300px;
     }
-
-
 }

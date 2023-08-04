@@ -1,4 +1,5 @@
 import { useRef } from "react";
+
 import emailjs from '@emailjs/browser';
 
 import classes from "../style/Contact.module.css";
@@ -16,17 +17,16 @@ function Contact() {
                 alert("성공적으로 이메일이 전송되었습니다.");
             },
             error => {
-                console.log(error.text);
                 alert("이메일이 전송이 실패되었습니다.");
             },
         );
     };
 
     return (
-        <div className={classes.aaa}>
-            <div className={classes.bbb}>
-                <img className={classes.ccc} src={contact_icon} />
-                <span className={classes.ddd}>
+        <div className={classes.content}>
+            <div className={classes.left_area}>
+                <img className={classes.img} src={contact_icon} />
+                <span className={classes.thanks_text}>
                     저의 포트폴리오를<br/>
                     읽어주셔서 감사합니다.<br/><br/>
 
@@ -34,18 +34,17 @@ function Contact() {
                     편하게 연락주세요!
                 </span>
             </div>
-            <div className={classes.eee}>
-                <span className={classes.fff}>Contact Me!</span>
+            <div className={classes.right_area}>
+                <span className={classes.title}>Contact Me!</span>
 
-                <form className={classes.jjj} ref={form} onSubmit={sendEmail}>
-                    <input className={classes.ggg} placeholder={"Your Name"} name="ask_title"/>
-                    <input className={classes.ggg} placeholder={"Your Email"} name="user_email"/>
-                    <textarea className={classes.hhh} placeholder={"Message"} name="ask_message"/>
-                    <div className={classes.iii} onClick={sendEmail.bind(this)}>
+                <form className={classes.form_area} ref={form} onSubmit={sendEmail}>
+                    <input className={classes.input_box} placeholder={"Your Name"} name="ask_title"/>
+                    <input className={classes.input_box} placeholder={"Your Email"} name="user_email"/>
+                    <textarea className={classes.input_area} placeholder={"Message"} name="ask_message"/>
+                    <div className={classes.btn_area} onClick={sendEmail.bind(this)}>
                         <span>Send</span>
                     </div>
                 </form>
-
             </div>
         </div>
     );

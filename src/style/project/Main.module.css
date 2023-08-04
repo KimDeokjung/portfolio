@@ -1,21 +1,16 @@
-.aaa {
+.header {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.bbb {
+.header_text {
     font-size: 42px;
     font-weight: 900;
     margin-bottom: 46px;
 }
 
-.ccc {
-
-}
-
-
-.ccc > div:nth-child(2) {
+.content > div:nth-child(2) {
     max-width: 1200px;
 }
 

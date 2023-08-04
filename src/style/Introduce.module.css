@@ -1,23 +1,23 @@
-.aaa {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.bbb {
+.info {
     width: 600px;
     margin-bottom: 100px;
     margin-top: 160px;
 }
 
-.ccc {
+.title {
     word-break: keep-all;
     font-size: 36px;
     margin-bottom: 40px;
 }
 
-.ddd {
+.detail {
     word-break: keep-all;
     font-size: 21px;
 }

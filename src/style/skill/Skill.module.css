@@ -1,4 +1,4 @@
-.aaa {
+.content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,8 +8,9 @@
     text-align: center;
 }
 
-.bbb {
-    width: 20%;
+.title {
+    width: 29%;
+    margin-right: 1vw;
     font-size: 20px;
     font-weight: bold;
 }

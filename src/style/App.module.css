@@ -5,26 +5,21 @@
     font-style: normal;
 }
 
-.main {
-
-}
-
-.aaa {
+.content {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-
     font-family: 'Pretendard';
     font-weight: 400;
     font-style: normal;
 }
 
-.aaa > div {
+.content > div {
     margin: 0 22%;
     min-width: 700px;
 }
 
-.bbb{
+.line{
     border: 0.1px solid #b9b9b9;
     margin: 100px 10%;
 }

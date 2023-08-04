@@ -1,4 +1,5 @@
 import classes from "../style/MyCard.module.css";
+
 import profile_image from "../images/kimDeokJung.jpg"
 import birth_icon from "../images/birth_icon.png"
 import blog_icon from "../images/blog_icon.png"
@@ -11,77 +12,77 @@ import school_icon from "../images/school_icon.png"
 
 function MyCard() {
     return (
-        <div className={classes.aaa}>
-            <span className={classes.eee}>About</span>
+        <div className={classes.content}>
+            <span className={classes.header}>About</span>
 
-            <div className={classes.ddd}>
-                <img className={classes.bbb} src={profile_image} />
+            <div className={classes.down_area}>
+                <img className={classes.profile_img} src={profile_image} />
 
-                <div className={classes.ccc}>
-                    <div className={classes.ggg}>
-                        <div className={classes.kkk}>
-                            <img className={classes.fff} src={profile_icon}/>
-                            <div className={classes.lll}>
-                                <span className={classes.mmm}>이름</span>
-                                <span className={classes.nnn}>김덕중</span>
+                <div className={classes.info_area}>
+                    <div className={classes.left_area}>
+                        <div className={classes.detail_info_area}>
+                            <img className={classes.icon_img} src={profile_icon}/>
+                            <div className={classes.detail_info}>
+                                <span className={classes.info_header}>이름</span>
+                                <span className={classes.info_content}>김덕중</span>
                             </div>
                         </div>
 
-                        <div className={classes.kkk}>
-                            <img className={classes.fff} src={birth_icon}/>
-                            <div className={classes.lll}>
-                                <span className={classes.mmm}>생년월일</span>
-                                <span className={classes.nnn}>1997.11.03</span>
+                        <div className={classes.detail_info_area}>
+                            <img className={classes.icon_img} src={birth_icon}/>
+                            <div className={classes.detail_info}>
+                                <span className={classes.info_header}>생년월일</span>
+                                <span className={classes.info_content}>1997.11.03</span>
                             </div>
                         </div>
 
-                        <div className={classes.kkk}>
-                            <img className={classes.fff} src={pin_icon}/>
-                            <div className={classes.lll}>
-                                <span className={classes.mmm}>주소</span>
-                                <span className={classes.nnn}>대구광역시 북구</span>
+                        <div className={classes.detail_info_area}>
+                            <img className={classes.icon_img} src={pin_icon}/>
+                            <div className={classes.detail_info}>
+                                <span className={classes.info_header}>주소</span>
+                                <span className={classes.info_content}>대구광역시 북구</span>
                             </div>
                         </div>
 
-                        <div className={classes.kkk}>
-                            <img className={classes.fff} src={phone_icon}/>
-                            <div className={classes.lll}>
-                                <span className={classes.mmm}>연락처</span>
-                                <span className={classes.nnn}>010-5272-1733</span>
+                        <div className={classes.detail_info_area}>
+                            <img className={classes.icon_img} src={phone_icon}/>
+                            <div className={classes.detail_info}>
+                                <span className={classes.info_header}>연락처</span>
+                                <span className={classes.info_content}>010-5272-1733</span>
                             </div>
                         </div>
                     </div>
 
                     <div className={classes.hhh}>
-                        <div className={classes.kkk}>
-                            <img className={classes.fff} src={mail_icon}/>
-                            <div className={classes.lll}>
-                                <span className={classes.mmm}>메일</span>
-                                <span className={classes.nnn}>ejrwnd1103@naver.com</span>
+                        <div className={classes.detail_info_area}>
+                            <img className={classes.icon_img} src={mail_icon}/>
+                            <div className={classes.detail_info}>
+                                <span className={classes.info_header}>메일</span>
+                                <span className={classes.info_content}>ejrwnd1103@naver.com</span>
                             </div>
                         </div>
 
-                        <div className={classes.kkk}>
-                            <img className={classes.fff} src={school_icon}/>
-                            <div className={classes.lll}>
-                                <span className={classes.mmm}>학력</span>
-                                <span className={classes.nnn}>영남대학교 컴퓨터공학과</span>
+                        <div className={classes.detail_info_area}>
+                            <img className={classes.icon_img} src={school_icon}/>
+                            <div className={classes.detail_info}>
+                                <span className={classes.info_header}>학력</span>
+                                <span className={classes.info_content}>영남대학교 컴퓨터공학과</span>
                             </div>
                         </div>
 
-                        <div className={classes.kkk}>
-                            <img className={classes.fff} src={github_icon}/>
-                            <div className={classes.lll}>
-                                <span className={classes.mmm}>GitHub</span>
-                                <span className={classes.nnn} onClick={() => window.open('https://github.com/KimDeokjung', '_blank')}>바로가기</span>
+                        <div className={classes.detail_info_area}>
+                            <img className={classes.icon_img} src={github_icon}/>
+                            <div className={classes.detail_info}>
+                                <span className={classes.info_header}>GitHub</span>
+                                <span className={classes.info_content} onClick={() => window.open('https://github.com/KimDeokjung', '_blank')}>바로가기</span>
                             </div>
                         </div>
 
-                        <div className={classes.kkk}>
-                            <img className={classes.fff} src={blog_icon}/>
-                            <div className={classes.lll}>
-                                <span className={classes.mmm}>Vlog</span>
-                                <span className={classes.nnn} onClick={() => window.open('https://velog.io/@kimdeokjoong', '_blank')}>바로가기</span>
+                        <div className={classes.detail_info_area}>
+                            <img className={classes.icon_img} src={blog_icon}/>
+                            <div className={classes.detail_info}>
+                                <span className={classes.info_header}>Vlog</span>
+                                <span className={classes.info_content} onClick={() => window.open('https://velog.io/@kimdeokjoong', '_blank')}>바로가기</span>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -98,7 +98,9 @@ function PlaygroundModal(props) {
                                                 clickable: true,
                                             }}
                                             onSlideChange={(e) => setMainPageIndex(e.activeIndex)}
-                                            modules={[Navigation, Autoplay, Pagination]}
+                                            modules={[Navigation, Autoplay, Pagination, EffectCoverflow]}
+                                            navigation={true}
+                                            mousewheel={true}
                                             className="mySwiper"
                                             loop={false}
                                             onSwiper={setSwiper}

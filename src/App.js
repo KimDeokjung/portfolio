@@ -1,5 +1,3 @@
-import classes from "./style/App.module.css";
-
 import Header from "./components/Header";
 import Introduce from "./components/Introduce";
 import MyCard from "./components/MyCard";
@@ -9,28 +7,22 @@ import Career from "./components/Career";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+import classes from "./style/App.module.css";
+
 function App() {
     return (
-        <div className={classes.main}>
+        <div>
             <Header/>
-            <div className={classes.aaa}>
+            <div className={classes.content}>
                 <Introduce/>
                 <MyCard/>
-
-                <hr className={classes.bbb}/>
-
+                <hr className={classes.line}/>
                 <Skill />
-
-                <hr className={classes.bbb}/>
-
+                <hr className={classes.line}/>
                 <Project />
-
-                <hr className={classes.bbb}/>
-
+                <hr className={classes.line}/>
                 <Career />
-
-                <hr className={classes.bbb}/>
-
+                <hr className={classes.line}/>
                 <Contact />
             </div>
             <Footer/>

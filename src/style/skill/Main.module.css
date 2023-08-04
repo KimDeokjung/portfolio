@@ -1,20 +1,20 @@
-.aaa {
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.bbb {
+.header_text {
     font-size: 42px;
     font-weight: 900;
     margin-bottom: 46px;
 }
 
-.ccc {
+.skill_area {
     width: 100%;
 }
 
-.ddd {
+.category {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@
     font-size: 16px;
 }
 
-.eee {
+.category_active {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +35,7 @@
     cursor: pointer;
 }
 
-.fff {
+.category_default {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,4 +46,26 @@
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.20);
     color: #969696;
     cursor: pointer;
+}
+
+.level_area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+.level_1 {
+    color: #ff5d5d;
+    margin-bottom: 8px;
+}
+
+.level_2 {
+    color: #FF7D00;
+    margin-bottom: 8px;
+}
+
+.level_3 {
+    color: #7878ff;
 }

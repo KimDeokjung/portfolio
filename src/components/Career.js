@@ -1,17 +1,17 @@
 import classes from "../style/Career.module.css";
+
 import heavenTree_logo from "../images/heavenTree_logo.png"
-import profile_icon from "../images/profile_icon.png";
 
 function Career() {
     return (
-        <div className={classes.aaa}>
-            <span className={classes.bbb}>Career</span>
+        <div className={classes.content}>
+            <span className={classes.header}>Career</span>
 
-            <div className={classes.ddd}>
-                <div className={classes.eee}>
-                    <img className={classes.ccc} src={heavenTree_logo}/>
+            <div className={classes.detail}>
+                <div className={classes.logo_area}>
+                    <img className={classes.logo} src={heavenTree_logo}/>
                 </div>
-                <div className={classes.fff}>
+                <div className={classes.career_area}>
                     <div>
                         (주) 헤븐트리
                     </div>
@@ -24,8 +24,8 @@ function Career() {
                     <div>
                         저는 선행연구팀에 소속되어 서비스에 새로운 기능을 개발하고 적용하는 업무를 수행했습니다. Express 기반의 풀 스택 웹 개발을 담당하며, 결제 서비스, Android/iOS 앱 개발, 보안 관리 등의 주요 업무를 수행했습니다. 업무에 여유가 있을 때는 동료 개발자의 작업에 대한 코드 리뷰를 하거나 기획을 도우는 등 보조 역할 또한 수행하였습니다.
                     </div>
-                    <hr className={classes.ggg}/>
-                    <div className={classes.hhh}>
+                    <hr className={classes.line}/>
+                    <div className={classes.career_detail}>
                         <div>▎ 경북여성정책개발원 통계사이트 관리</div>
                         <div>2021.11 ~ 2021.12</div>
                         <ul>
@@ -37,7 +37,7 @@ function Career() {
                         </ul>
                     </div>
 
-                    <div className={classes.hhh}>
+                    <div className={classes.career_detail}>
                         <div>▎ 국가사업을 위한 스마트팩토리 구축</div>
                         <div>2021.12 ~ 2022.01</div>
                         <ul>
@@ -49,14 +49,12 @@ function Career() {
                         </ul>
                     </div>
 
-                    <div className={classes.hhh}>
+                    <div className={classes.career_detail}>
                         <div>▎ PayPal 결제 서비스 개발</div>
                         <div>2022.01 ~ 2022.04</div>
                         <ul>
                             <li>PayPal store 계정 등록</li>
-                            <li>서비스 신청 페이지 개발</li>
-                            <li>서비스 환불 페이지 개발</li>
-                            <li>서비스 변경 페이지 개발</li>
+                            <li>서비스 신청 / 환불 / 변경 페이지  개발</li>
                             <li>Instant Payment Notification 서비스 연결</li>
                             <li>기존 NicePay 결제 서비스와의 공동 모듈 리팩토링</li>
                             <li>Sandbox 환경 세팅</li>
@@ -64,7 +62,7 @@ function Career() {
                         </ul>
                     </div>
 
-                    <div className={classes.hhh}>
+                    <div className={classes.career_detail}>
                         <div>▎ 자사 제품 "Clovine" Application 개발/출시</div>
                         <div>2022.04 ~ 2022.08</div>
                         <ul>
@@ -86,7 +84,7 @@ function Career() {
                         </ul>
                     </div>
 
-                    <div className={classes.hhh}>
+                    <div className={classes.career_detail}>
                         <div>▎ 로그인 보안 강화</div>
                         <div>2022.08 ~ 2022.09</div>
                         <ul>
@@ -100,7 +98,7 @@ function Career() {
                         </ul>
                     </div>
 
-                    <div className={classes.hhh}>
+                    <div className={classes.career_detail}>
                         <div>▎ CSAP 심사 진행</div>
                         <div>2021.11 ~ 2021.12</div>
                         <ul>

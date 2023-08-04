@@ -1,22 +1,22 @@
 import {useState} from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 
-import { EffectCoverflow, Navigation,Mousewheel} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Navigation} from "swiper/modules";
 
 import ProjectCard from "./ProjectCard";
-import classes from "../../style/project/Main.module.css";
-
-import DeliveryTogether from "../../images/DeliveryTogether.png"
-import Ims from "../../images/Ims.png"
-import Playground from "../../images/Playground.png"
-import Deats from "../../images/Deats.png"
-import Portfolio from "../../images/Portfolio.png"
-
 import DeliveryTogetherModal from "./projectModal/DeliveryTogetherModal";
 import ImsModal from "./projectModal/ImsModal";
 import PlaygroundModal from "./projectModal/PlaygroundModal";
 import DeatsModal from "./projectModal/DeatsModal";
 import PortfolioModal from "./projectModal/PortfolioModal";
+
+import classes from "../../style/project/Main.module.css";
+
+import DeliveryTogether from "../../images/DeliveryTogether.png"
+import Playground from "../../images/Playground.png"
+import Portfolio from "../../images/Portfolio.png"
+import Deats from "../../images/Deats.png"
+import Ims from "../../images/Ims.png"
 
 function Main() {
     const [modalOpen, setModalOpen] = useState(0)
@@ -134,11 +134,10 @@ function Main() {
         }
     ]
 
-
     return (
-        <div className={classes.ccc}>
-            <div className={classes.aaa}>
-                <span className={classes.bbb}>Projects</span>
+        <div className={classes.content}>
+            <div className={classes.header}>
+                <span className={classes.header_text}>Projects</span>
             </div>
 
             <Swiper
@@ -155,7 +154,7 @@ function Main() {
                 }}
                 navigation={true}
                 mousewheel={true}
-                modules={[EffectCoverflow,Navigation,Mousewheel]}
+                modules={[EffectCoverflow, Navigation]}
                 className="mySwiper"
             >
                 <div className="container">
