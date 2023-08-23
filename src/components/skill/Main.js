@@ -32,12 +32,12 @@ function Main() {
             level: 3
         },
         {
-            id: 5,
-            name: "Node.js",
-            level: 3
+            id: 6,
+            name: "Assembly",
+            level: 1
         },
         {
-            id: 6,
+            id: 5,
             name: "C",
             level: 1
         }
@@ -176,12 +176,22 @@ function Main() {
                             <Skill key={content.id} content={content} nowIndex={mainSkillIndex} mappingIndex={0}/>
                         ))}
                     </div>
+                    <div className={classes.level_area}>
+                        <span className={classes.level_1}>Level 1 : 학습을 통해 간단한 프로젝트 만들어 보며 실습한 경험이 존재합니다.</span>
+                        <span className={classes.level_2}>Level 2 : 실전에서 직접 사용해보며 숙련도 증진시켰습니다. </span>
+                        <span className={classes.level_3}>Level 3 : 실전에서 사용한 경험이 존재하며, 개인적인 학습을 통해 지속적으로 발전시켰습니다.</span>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={classes.skill_area}>
                         {frameworkContents.map(content => (
                             <Skill key={content.id} content={content} nowIndex={mainSkillIndex} mappingIndex={1}/>
                         ))}
+                    </div>
+                    <div className={classes.level_area}>
+                        <span className={classes.level_1}>Level 1 : 학습을 통해 간단한 프로젝트 만들어 보며 실습한 경험이 존재합니다.</span>
+                        <span className={classes.level_2}>Level 2 : 실전에서 직접 사용해보며 숙련도 증진시켰습니다. </span>
+                        <span className={classes.level_3}>Level 3 : 실전에서 사용한 경험이 존재하며, 개인적인 학습을 통해 지속적으로 발전시켰습니다.</span>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -190,6 +200,11 @@ function Main() {
                             <Skill key={content.id} content={content} nowIndex={mainSkillIndex} mappingIndex={2}/>
                         ))}
                     </div>
+                    <div className={classes.level_area}>
+                        <span className={classes.level_1}>Level 1 : 학습을 통해 간단한 프로젝트 만들어 보며 실습한 경험이 존재합니다.</span>
+                        <span className={classes.level_2}>Level 2 : 실전에서 직접 사용해보며 숙련도 증진시켰습니다. </span>
+                        <span className={classes.level_3}>Level 3 : 실전에서 사용한 경험이 존재하며, 개인적인 학습을 통해 지속적으로 발전시켰습니다.</span>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={classes.skill_area}>
@@ -197,15 +212,13 @@ function Main() {
                             <Skill key={content.id} content={content} nowIndex={mainSkillIndex} mappingIndex={3}/>
                         ))}
                     </div>
+                    <div className={classes.level_area}>
+                        <span className={classes.level_1}>Level 1 : 학습을 통해 간단한 프로젝트 만들어 보며 실습한 경험이 존재합니다.</span>
+                        <span className={classes.level_2}>Level 2 : 실전에서 직접 사용해보며 숙련도 증진시켰습니다. </span>
+                        <span className={classes.level_3}>Level 3 : 실전에서 사용한 경험이 존재하며, 개인적인 학습을 통해 지속적으로 발전시켰습니다.</span>
+                    </div>
                 </SwiperSlide>
             </Swiper>
-
-            <div className={classes.level_area}>
-                <span className={classes.level_1}>Level 1 : 학습을 통해 간단한 프로젝트 만들어 보며 실습한 경험이 존재합니다.</span>
-                <span className={classes.level_2}>Level 2 : 실전에서 직접 사용해보며 숙련도 증진시켰습니다. </span>
-                <span className={classes.level_3}>Level 3 : 실전에서 사용한 경험이 존재하며, 개인적인 학습을 통해 지속적으로 발전시켰습니다.</span>
-            </div>
-
         </div>
     );
 }
